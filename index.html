@@ -48,21 +48,8 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/htmltypist.js/dist/typist.js"></script>
-        <script>window.onbeforeunload = function () {window.scrollTo(0, 0);}</script>
         <script>
-            // console.log("helloo");
-            // window.onscroll = function() {myFunc};
-            var navbar = document.getElementById("navi");
-            var sticky = navbar.offsetTop;
-
-            function myFunc() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky");
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-            window.addEventListener("scroll", myFunc);
+            var navbar=document.getElementById("navi"),sticky=navbar.offsetTop;function myFunc(){window.pageYOffset>=sticky?navbar.classList.add("sticky"):navbar.classList.remove("sticky")}window.addEventListener("scroll",myFunc);
         </script>
     </body>
 </html>
